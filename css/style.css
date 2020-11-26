@@ -3,8 +3,10 @@
   src: url(fonts/arial.ttf); 
 }
 
-body {
+.page {
   font-family: arial;
+  margin: 0 auto;
+  width: 1280px;
 }
 
 h1 {
@@ -55,7 +57,6 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 50px;
-  /*margin: 0 auto;*/
 }
 
 .header-content {
@@ -173,19 +174,34 @@ p {
   margin: 0 0 24px 0;
 }
 
+
+
 .reviews-img {
   width: 75px;
   height: 75px;
   background: #445161;
-  margin: 0 15px 30px 0;
+  margin: 0 5px 30px 0;
   border-radius: 50%;
 }
 
 .reviews-text {
-  width: 483px;
   padding: 16px 20px 16px 27px;
   background: url(img/bg.png) #EBEBEB;
+  width: 483px;
+  min-height: 121px;
+  margin-left: 15px;
+  background-color: #ccc;
+  border-radius: 5px;
+  position: relative;
+  }
   
+.reviews-text:before {
+  content: "";
+  border: 15px solid transparent;	
+  border-right: 15px solid #ccc;
+  position: absolute;
+  top: 20px;
+  left: -30px;
 }
 
 .reviews-p {
@@ -206,4 +222,59 @@ p {
 
 .buy {
   padding: 50px;
+
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.price-title {
+  width: 100%;
+  text-align: center;
+}
+
+.price-item {
+  width: 30%;
+  border: 1px solid red;
+}
+
+.price-item:nth-child(2) {
+  height: 50px;
+  align-self: flex-end;
+}
+
+.price-item:nth-child(3) {
+  height: 150px;
+  align-self: flex-end;
+}
+
+.price-item:last-child {
+  height: 250px;
+  align-self: flex-end;
+}
+
+.social-link {
+  margin-top: 50px;
+  display: block;
+  width: 150px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: royalblue;
+  text-transform: uppercase;
+  /* outline: none; */
+}
+
+.social-link:hover {
+  background-color: orange;
+}
+
+.social-link:active {
+  background-color: bisque;
+  color: black;
 }
