@@ -407,15 +407,56 @@ textarea {
 }
 
 .contacts-list {
-font-size: 16px;
+font-size: 24px;
 line-height: 24px;
 font-weight: 400;
 color: #ffffff;
-margin: 5px 0 20px 0;
+margin: 5px 0 20px 10px;
 text-decoration: none;
 }
 
+.socialbuttons {
+  display: flex;
+}
 
+.link {
+width: 44px;
+height: 44px;
+margin: 0 5px 0 0;
+background: url(../img/freeflatsocialicons.png);
+}
+
+.link:nth-child(1) {
+  background-position: 0 0;
+}
+
+.link:nth-child(1):hover {
+  background-position: 0 44px;
+}
+
+.link:nth-child(2) {
+  background-position: 44px 0;
+}
+
+.link:nth-child(2):hover {
+  background-position: 44px 44px;
+}
+
+.link:nth-child(3) {
+  background-position: 94px 0;
+}
+
+.link:nth-child(3):hover {
+  background-position: 94px 44px;
+}
+
+.link:nth-child(4) {
+  background-position: 148px 0;
+}
+
+.link:nth-child(4):hover {
+  background-position: 148px 44px;
+}
 
 .copyright {
   background: #ffffff;
